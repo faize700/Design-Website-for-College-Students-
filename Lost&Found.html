@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lost and Found - CU</title>
+    <link rel="stylesheet" href="css/L&F.css">
+    
+    <link rel="shortcut icon" href="image/loader.png" type="image/fevicon">
+</head>
+<body>
+    <nav>
+        <a href="index.html"><img src="image/cu-logo-white.webp" id="logo-img"></a>
+
+        <div class="nav-links" id="navLinks">
+
+            <span class="icon" onclick="hidemenu()">&#10005;</span>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Admission_page.html">Admission</a></li>
+                <li><a href="#course_call">Course</a></li>
+                <li><a href="fees_page.html">Fees</a></li>
+                <li><a href="Contact_page.html">Contact</a></li>
+                <li><a href="Lost&Found.html">Lost & Found</a></li>
+                
+            </ul>
+        </div> 
+        <span class="icon" onclick="showmenu()">&#9776;</span>
+    </nav>
+    
+    
+    <section class="lost-and-found">
+        <h1>Lost and Found</h1>
+
+        <!-- Lost Item Form -->
+        <div class="report-lost">
+            <h2>Report Lost Item</h2>
+            <form id="lostForm">
+                <label for="itemName">Item Name:</label>
+                <input type="text" id="itemName" required>
+
+                <label for="itemContact">Phone:</label>
+                <input type="tel" id="itemContact" required>
+
+                <label for="itemDescription">Description:</label>
+                <textarea id="itemDescription" required></textarea>
+
+                <button type="button" onclick="reportLostItem()">Report Lost Item</button>
+            </form>
+        </div>
+
+        <!-- Found Items Section -->
+        <div class="found-items">
+            <h2>Found Items</h2>
+            <ul id="foundItemsList">
+                <!-- Display found items dynamically using JavaScript -->
+            </ul>
+        </div>
+    </section>
+</section>
+
+    <!-- Other sections and footer -->
+
+    <script src="javascript/L&F.js"></script>
+    <script>
+        var navLinks= document.getElementById("navLinks");
+    
+    function showmenu(){
+        navLinks.style.right="0";
+    }   
+    function hidemenu(){
+        navLinks.style.right="-200px";
+    }
+    </script>
+</body>
+</html>

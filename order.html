@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Food Delivery</title>
+    <link
+      rel="stylesheet"
+      href="/College-Website-master/College-Website-master/css/FoodStyle.css"
+    />
+    <link rel="shortcut icon" href="image/loader.png" type="image/fevicon" />
+  </head>
+  <body>
+    <nav>
+      <a href="index.html"
+        ><img src="image/cu-logo-white.webp" id="logo-img"
+      /></a>
+
+      <div class="nav-links" id="navLinks">
+        <span class="icon" onclick="hidemenu()">&#10005;</span>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Admission_page.html">Admission</a></li>
+          <li><a href="#course_call">Course</a></li>
+          <li><a href="fees_page.html">Fees</a></li>
+          <li><a href="Contact_page.html">Contact</a></li>
+          <li><a href="Lost&Found.html">Lost & Found</a></li>
+          <li><a href="order.html">Order Food</a></li>
+        </ul>
+      </div>
+      <span class="icon" onclick="showmenu()">&#9776;</span>
+    </nav>
+    <header>
+      <h1 >Food Delivery</h1>
+    </header>
+    <div class="menu">
+      <h2 class="t1">Menu</h2> 
+      <div class="food-items" id="foodItems">
+        <!-- Food items will be dynamically added here using JavaScript -->
+      </div>
+    </div>
+
+    <div class="cart">
+      <h2>Cart</h2>
+      <ul id="cartItems">
+        <!-- Cart items will be dynamically added here using JavaScript -->
+      </ul>
+      <button onclick="checkout()">Checkout</button>
+    </div>
+
+    <script src="/College-Website-master/College-Website-master/javascript/script.js"></script>
+  </body>
+</html>

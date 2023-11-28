@@ -1,0 +1,117 @@
+/* Basic styling for the food delivery page */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("/College-Website-master/College-Website-master/image/food.jpg");
+}
+h1{
+  color: black;
+}
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.7
+  ); /* Example background color with transparency */
+  z-index: 1000; /* Ensure the navbar is on top of other elements */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 6%;
+  transition: top 0.3s; /* Add smooth transition if desired */
+}
+header {
+  /* ... (existing styles) */
+  padding-top: 80px; /* Add padding to accommodate the fixed navbar */
+}
+
+nav img {
+  width: 150px;
+}
+.nav-links {
+  flex: 1;
+  text-align: right;
+  margin-right: 10%; /* Adjust the margin or padding as needed */
+}
+
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+  border: none;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.nav-links ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #ff0000;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+  width: 100%;
+}
+
+.icon {
+  display: none;
+}
+header {
+  /* background-color: #333; */
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  width: 100%;
+}
+
+.menu,
+.cart {
+  width: 45%;
+  padding: 40px;
+}
+
+
+.food-item,
+.cart-item {
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  display: block;
+  padding: 10px 20px;
+  margin-top: 10px;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #333;
+  color: #fff;
+}
